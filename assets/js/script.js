@@ -2,7 +2,7 @@ let continuer = true;
 
 function convertUsdToEur() {
   const amount = parseFloat(document.getElementById("montant").value);
-  let convert1 = ((amount * 1) / 0.94).toFixed(2);
+  let convert1 = ((amount * 1) / 1.06).toFixed(2);
   const paragraphe = document.createElement("p");
   paragraphe.textContent = `${amount} USD équivalent à ${convert1} EUR.`;
   document.body.appendChild(paragraphe);
@@ -11,7 +11,7 @@ function convertUsdToEur() {
 
 function convertEurToUsd() {
   const amount = parseFloat(document.getElementById("montant").value);
-  let convert2 = ((amount * 1) / 1.06).toFixed(2);
+  let convert2 = ((amount * 1) / 0.94).toFixed(2);
   const paragraphe = document.createElement("p");
   paragraphe.textContent = `${amount} EUR équivalent à ${convert2} USD.`;
   document.body.appendChild(paragraphe);
