@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="assets/css/style.css">
+    <title>Convertisseur devises</title>
+</head>
+
+<body>
+    <header></header>
+    <h1>Convertisseur USD/EURO</h1>
+    <main>
+        <div id="convertisseur">
+            <label for="montant">Montant à convertir :</label><br>
+            <input type="number" id="montant"><br><br>
+            <label for="choixDevise">Choisissez la conversion :</label><br>
+            <select name="devises" id="choixDevise">
+                <option value="">--Choisissez une option</option>
+                <option value="usdToEur">USD => EUR</option>
+                <option value="eurToUsd">EUR => USD</option>
+            </select><br><br>
+            <button onclick="convertButton()">Convertir</button>
+            <button onclick="resetButton()">Réinitialiser</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
