@@ -19,7 +19,7 @@ function convertButton() {
       document.body.appendChild(paragraphe2);
       break;
 
-    case "":
+    default:
       alert("Choisissez la méthode de conversion.");
       break;
   }
